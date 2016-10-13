@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Slideshow",
+  "version": "1.3",
+  "description": "Simple HTML5 slideshow app.",
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "slideshow-16.png", "32": "slideshow-32.png", "128": "slideshow-128.png" },
+  "author": {
+    "name": "Sven Neumann",
+    "email": "killroy@gmail.com",
+    "website": "http://killroy.org/"
+  }
+}
