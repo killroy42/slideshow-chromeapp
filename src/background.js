@@ -1,6 +1,6 @@
 /*global chrome: false */
 
-const version = 1.3;
+const version = '1.3.1';
 const windowProps = {'outerBounds': {'width': 1280, 'height': 800}};
 const bodyText = `
 	<br>
@@ -160,7 +160,7 @@ const handleWindowReady = (win) => {
 			const files = [].slice.apply.call([].slice, event.dataTransfer.files);
 			slideshow.start(files);
 		};
-		const handleMousedown = (event) => (event.clientX > 0.5 * event.view.innerWidth)?slideshow.prev(true):slideshow.next(true);
+		const handleMousedown = (event) => (event.clientX > 0.5 * event.view.innerWidth)?slideshow.next(true):slideshow.prev(true);
 		const handleMousedwheel = (event) => (event.deltaY > 0)?slideshow.next(true):slideshow.prev(true);
 		const handleKeydown = (event) => {
 			switch (event.key) {
